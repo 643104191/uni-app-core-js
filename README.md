@@ -24,7 +24,7 @@ const set = new Set()
 set.add(1)
 ```
 ### 关于可能兼容的说明
-取决于 __目标浏览器(webview)__ 是否支持相关对象
+取决于 __目标浏览器(webview)__ 是否支持相关对象/构造函数/数据类型
 比如,浏览器支持Promise,但是不支持Promise.prototype.finally
 那么可以为Promise加上finally兼容
 但是浏览器(webview)不支持Promise,就没办法给浏览器(webview)添加Promise兼容(Set等其他es6新api同理)
