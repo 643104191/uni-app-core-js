@@ -1,10 +1,10 @@
 {
-  "name": "core-js",
-  "description": "Standard library",
+  "name": "uni-app-core-js",
+  "description": "Polyfill Library For uni-app",
   "version": "2.6.9",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zloirock/core-js.git"
+    "url": "https://github.com/643104191/uni-app-core-js"
   },
   "main": "index.js",
   "devDependencies": {
