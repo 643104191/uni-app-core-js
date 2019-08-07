@@ -28,7 +28,7 @@ set.add(1)
 比如,浏览器支持Promise,但是不支持Promise.prototype.finally
 那么可以为Promise加上finally兼容
 但是浏览器(webview)不支持Promise,就没办法给浏览器(webview)添加Promise兼容(Set等其他es6新api同理)
-因为小程序端没办法像网页端那样拿到全局变量(比如window)
+因为类似小程序端没办法像网页端那样拿到全局变量(比如window)
 __所以即使有相关兼容的代码,也加不到全局作用域里去__
 
 如果确定目标浏览器不支持Promise的话,可以直接在github上找相关兼容库,直接进行`import`
