@@ -68,6 +68,7 @@
     "setImmediate",
     "Dict",
     "polyfill",
-    "shim"
+    "shim",
+    "uni-app"
   ]
 }
