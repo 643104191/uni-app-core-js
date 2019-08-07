@@ -1,28 +1,28 @@
 delete global.Promise;
 
-var Promise = require('../../packages/core-js').Promise;
-var assert = require('assert');
+var Promise = require('../../shim.js').Promise;
+var assert  = require('assert')
 
 module.exports = {
-  deferred: function () {
-    var deferred = {};
-    deferred.promise = new Promise(function (resolve, reject) {
-      deferred.resolve = resolve;
-      deferred.reject = reject;
-    });
-    return deferred;
+  deferred: function(){
+  	var o = {};
+  	o.promise = new Promise(function(resolve,reject){
+  		o.resolve = resolve;
+  		o.reject  = reject;
+  	});
+  	return o;
   },
-  resolved: function (value) {
-    return Promise.resolve(value);
+  resolved: function(val){
+	  return Promise.resolve(val);
   },
-  rejected: function (reason) {
-    return Promise.reject(reason);
+  rejected: function(reason){
+	 return Promise.reject(reason);
   },
-  defineGlobalPromise: function (global) {
+  defineGlobalPromise: function(global){
     global.Promise = Promise;
-    global.assert = assert;
+    global.assert  = assert;
   },
-  removeGlobalPromise: function () {
+  removeGlobalPromise: function(){
     delete global.Promise;
   }
 };
