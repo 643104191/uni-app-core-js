@@ -1,7 +1,7 @@
 {
   "name": "uni-app-core-js",
   "description": "Polyfill Library For uni-app",
-  "version": "2.6.9",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/643104191/uni-app-core-js"
